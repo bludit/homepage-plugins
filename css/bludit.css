@@ -65,3 +65,8 @@ a.author-social:hover {
 .btn-primary {
 	background: linear-gradient(to bottom,#42a5f5 0,#2196f3 100%);
 }
+
+#search {
+	width: 60%;
+	margin: 0 auto;
+}

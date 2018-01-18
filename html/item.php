@@ -36,36 +36,35 @@
 		</div>
 
 		<div class="my-4">
-		<h4><?php l('Author') ?> <?php echo $_item['author_name'] ?></h4>
+		<h4><?php l('Author') ?> <?php echo $_item['author']['name'] ?></h4>
 			<?php
-				if (!empty($_item['author_facebook'])) {
-					echo'<a class="author-social" href="'.$_item['author_facebook'].'" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>'.PHP_EOL;
+				if (!empty($_item['author']['facebook'])) {
+					echo'<a class="author-social" href="'.$_item['author']['facebook'].'" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>'.PHP_EOL;
 				}
-				if (!empty($_item['author_twitter'])) {
-					echo'<a class="author-social" href="'.$_item['author_twitter'].'" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>'.PHP_EOL;
+				if (!empty($_item['author']['twitter'])) {
+					echo'<a class="author-social" href="'.$_item['author']['twitter'].'" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>'.PHP_EOL;
 				}
-				if (!empty($_item['author_github'])) {
-					echo'<a class="author-social" href="'.$_item['author_github'].'" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>'.PHP_EOL;
+				if (!empty($_item['author']['github'])) {
+					echo'<a class="author-social" href="'.$_item['author']['github'].'" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>'.PHP_EOL;
 				}
-				if (!empty($_item['author_youtube'])) {
-					echo'<a class="author-social" href="'.$_item['author_youtube'].'" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a>'.PHP_EOL;
+				if (!empty($_item['author']['youtube'])) {
+					echo'<a class="author-social" href="'.$_item['author']['youtube'].'" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a>'.PHP_EOL;
 				}
-				if (!empty($_item['author_reddit'])) {
-					echo'<a class="author-social" href="'.$_item['author_reddit'].'" target="_blank"><i class="fa fa-reddit" aria-hidden="true"></i></a>'.PHP_EOL;
+				if (!empty($_item['author']['reddit'])) {
+					echo'<a class="author-social" href="'.$_item['author']['reddit'].'" target="_blank"><i class="fa fa-reddit" aria-hidden="true"></i></a>'.PHP_EOL;
 				}
-				if (!empty($_item['author_pinterest'])) {
-					echo'<a class="author-social" href="'.$_item['author_pinterest'].'" target="_blank"><i class="fa fa-pinterest" aria-hidden="true"></i></a>'.PHP_EOL;
+				if (!empty($_item['author']['pinterest'])) {
+					echo'<a class="author-social" href="'.$_item['author']['pinterest'].'" target="_blank"><i class="fa fa-pinterest" aria-hidden="true"></i></a>'.PHP_EOL;
 				}
-				if (!empty($_item['author_flickr'])) {
-					echo'<a class="author-social" href="'.$_item['author_flickr'].'" target="_blank"><i class="fa fa-flickr" aria-hidden="true"></i></a>'.PHP_EOL;
+				if (!empty($_item['author']['flickr'])) {
+					echo'<a class="author-social" href="'.$_item['author']['flickr'].'" target="_blank"><i class="fa fa-flickr" aria-hidden="true"></i></a>'.PHP_EOL;
 				}
-				if (!empty($_item['author_google_plus'])) {
-					echo'<a class="author-social" href="'.$_item['author_google_plus'].'" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a>'.PHP_EOL;
+				if (!empty($_item['author']['google_plus'])) {
+					echo'<a class="author-social" href="'.$_item['author']['google_plus'].'" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a>'.PHP_EOL;
 				}
-				if (!empty($_item['author_vk'])) {
-					echo'<a class="author-social" href="'.$_item['author_vk'].'" target="_blank"><i class="fa fa-vk" aria-hidden="true"></i></a>'.PHP_EOL;
+				if (!empty($_item['author']['vk'])) {
+					echo'<a class="author-social" href="'.$_item['author']['vk'].'" target="_blank"><i class="fa fa-vk" aria-hidden="true"></i></a>'.PHP_EOL;
 				}
-
 			?>
 		</div>
 

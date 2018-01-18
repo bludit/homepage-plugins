@@ -6,6 +6,10 @@
 	<h4 class="my-5 text-center"><?php l('little-description-paragraph1') ?></h4>
 
 	<div class="row my-5">
+		<input type="text" class="form-control" id="search" placeholder="<?php l('Search') ?>">
+	</div>
+
+	<div class="row my-5">
 
 		<?php foreach ($_items as $item): ?>
 
@@ -14,7 +18,7 @@
 				<!-- <a href="<?php echo $item['permalink'] ?>"><img class="card-img-top" src="<?php echo $item['screenshoot_url'] ?>" alt="Screenshoot"></a> -->
 				<div class="card-body">
 					<h4 class="card-title"><a href="<?php echo $item['permalink'] ?>"><?php echo $item['name'] ?></a></h4>
-					<h6 class="card-subtitle mb-3"><?php l('Made by') ?> <?php echo $item['author_name'] ?></h6>
+					<h6 class="card-subtitle mb-3"><?php l('Made by') ?> <?php echo $item['author']['name'] ?></h6>
 					<p class="card-description"><?php echo $item['description'] ?></p>
 					<?php
 						if (!empty($item['demo_url'])) {

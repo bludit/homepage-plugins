@@ -31,8 +31,11 @@
 		</div>
 
 		<div class="my-4">
-			<h4 class="my-3"><?php l('Last Update') ?></h4>
-			<?php echo $_item['release_date'] ?>
+		<h4 class="my-3"><?php l('Last Update') ?>: <?php echo $_item['release_date'] ?></h4>
+		</div>
+
+		<div class="my-4">
+		<h4 class="my-3"><?php l('Version') ?>: <?php echo $_item['version'] ?></h4>
 		</div>
 
 		<div class="my-4">

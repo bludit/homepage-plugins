@@ -23,10 +23,10 @@ function buildItem($data, $filename) {
 	$data['screenshoot_twitter_url'] = CDN.$data['filename'].'/screenshot.png';
 	$data['screenshoot_facebook_url'] = CDN.$data['filename'].'/screenshot.png';
 	$data['permalink'] = $_topbar['website'].'/'.ITEM_TYPE.'/'.$filename;
-	if (isset($data['description_'.$currentLanguage])) {
+	if (!empty($data['description_'.$currentLanguage])) {
 		$data['description'] = $data['description_'.$currentLanguage];
 	}
-	if (isset($data['features_'.$currentLanguage])) {
+	if (!empty($data['features_'.$currentLanguage])) {
 		$data['features'] = $data['features_'.$currentLanguage];
 	}
 

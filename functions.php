@@ -14,15 +14,15 @@ function l($key, $print=true) {
 	}
 }
 
-function buildItem($data, $filename) {
+function buildItem($data, $key) {
 	global $currentLanguage;
 	global $_topbar;
 
-	$data['filename'] = $filename;
-	$data['screenshoot_url'] = CDN.$data['filename'].'/screenshot.png';
-	$data['screenshoot_twitter_url'] = CDN.$data['filename'].'/screenshot.png';
-	$data['screenshoot_facebook_url'] = CDN.$data['filename'].'/screenshot.png';
-	$data['permalink'] = $_topbar['website'].ITEM_TYPE.'/'.$filename;
+	$data['key'] = $key;
+	$data['screenshoot_url'] = CDN.$data['key'].'/screenshot.png';
+	$data['screenshoot_twitter_url'] = CDN.$data['key'].'/screenshot.png';
+	$data['screenshoot_facebook_url'] = CDN.$data['key'].'/screenshot.png';
+	$data['permalink'] = $_topbar['website'].ITEM_TYPE.'/'.$key;
 	if (!empty($data['description_'.$currentLanguage])) {
 		$data['description'] = $data['description_'.$currentLanguage];
 	}
@@ -56,15 +56,15 @@ function getItems() {
 	return $tmp;
 }
 
-function getItem($filename) {
-	$metadataFile = PATH_ITEMS.$filename.DS.'metadata.json';
+function getItem($key) {
+	$metadataFile = PATH_ITEMS.$key.DS.'metadata.json';
 	if (!file_exists($metadataFile)) {
 		return false;
 	}
 
 	$json = file_get_contents($metadataFile);
 	$data = json_decode($json, true);
-	$item = buildItem($data, $filename);
+	$item = buildItem($data, $key);
 
 	return $item;
 }
@@ -80,6 +80,24 @@ function getAuthor($username) {
 	$author = buildAuthor($data);
 
 	return $author;
+}
+
+function getItemsByAuthor($username) {
+	$tmp = array();
+	$it = new RecursiveDirectoryIterator(PATH_ITEMS);
+	foreach (new RecursiveIteratorIterator($it) as $file) {
+		if ($file->getExtension()=='json') {
+			$json = file_get_contents($file);
+			$data = json_decode($json, true);
+			if ($data['author_username']==$username) {
+				$item = buildItem($data, basename(dirname(($file))));
+				array_push($tmp, $item);
+			}
+		}
+	}
+	// Sort by date
+	usort($tmp, "sortByDate");
+	return $tmp;
 }
 
 function sortByDate($a, $b) {

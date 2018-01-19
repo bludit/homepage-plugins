@@ -36,6 +36,10 @@
 				}
 			});
 		});
+
+		$(".item-screenshot").on("error", function(){
+			$(this).attr("src", "<?php echo SCREENSHOT_DEFAULT ?>");
+		});
 	});
 	</script>
 

@@ -19,9 +19,9 @@ function buildItem($data, $key) {
 	global $_topbar;
 
 	$data['key'] = $key;
-	$data['screenshoot_url'] = CDN.$data['key'].'/screenshot.png';
-	$data['screenshoot_twitter_url'] = CDN.$data['key'].'/screenshot.png';
-	$data['screenshoot_facebook_url'] = CDN.$data['key'].'/screenshot.png';
+	$data['screenshoot_url'] = CDN.'items/'.$data['key'].'/screenshot.png';
+	$data['screenshoot_twitter_url'] = CDN.'items/'.$data['key'].'/screenshot.png';
+	$data['screenshoot_facebook_url'] = CDN.'items/'.$data['key'].'/screenshot.png';
 	$data['permalink'] = rtrim($_topbar['website'],'/').'/'.ITEM_TYPE.'/'.$key;
 	if (!empty($data['description_'.$currentLanguage])) {
 		$data['description'] = $data['description_'.$currentLanguage];

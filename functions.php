@@ -47,7 +47,7 @@ function getItems() {
 		if ($file->getExtension()=='json') {
 			$json = file_get_contents($file);
 			$data = json_decode($json, true);
-			$item = buildItem($data, pathinfo($file, PATHINFO_FILENAME));
+			$item = buildItem($data, basename($file));
 			array_push($tmp, $item);
 		}
 	}

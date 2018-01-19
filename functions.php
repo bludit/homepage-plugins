@@ -22,7 +22,7 @@ function buildItem($data, $filename) {
 	$data['screenshoot_url'] = CDN.$data['filename'].'/screenshot.png';
 	$data['screenshoot_twitter_url'] = CDN.$data['filename'].'/screenshot.png';
 	$data['screenshoot_facebook_url'] = CDN.$data['filename'].'/screenshot.png';
-	$data['permalink'] = $_topbar['website'].'/'.ITEM_TYPE.'/'.$filename;
+	$data['permalink'] = $_topbar['website'].ITEM_TYPE.'/'.$filename;
 	if (!empty($data['description_'.$currentLanguage])) {
 		$data['description'] = $data['description_'.$currentLanguage];
 	}

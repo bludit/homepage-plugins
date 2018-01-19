@@ -9,6 +9,9 @@ define('PATH_ITEMS', PATH_METADATA.'items'.DS);
 define('PATH_AUTHORS', PATH_METADATA.'authors'.DS);
 define('CHARSET', 'UTF-8');
 
+define('GOOGLE_ANALYTICS', 'UA-67610404-5');
+
+
 #define('DOMAIN', 'http://localhost:8000');
 #define('CDN', 'http://localhost:8000/metadata/items/');
 

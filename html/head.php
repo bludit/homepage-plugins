@@ -74,7 +74,7 @@
 		window.dataLayer = window.dataLayer || [];
 		function gtag(){dataLayer.push(arguments);}
 		gtag('js', new Date());
-		gtag('config', 'UA-67610404-7');
+		gtag('config', '<?php echo GOOGLE_ANALYTICS ?>');
 	</script>
 
 </head>

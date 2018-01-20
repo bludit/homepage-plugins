@@ -30,6 +30,11 @@ a {
 	color: #888;
 }
 
+.card-description {
+	height: 100px;
+
+}
+
 .nav-link {
 	font-size: 0.8em;
 	text-transform: uppercase;

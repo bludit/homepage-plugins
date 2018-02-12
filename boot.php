@@ -54,7 +54,7 @@ if (!empty($_GET['item'])) {
 		$tmpLanguages = $acceptedLanguages;
 		unset($tmpLanguages[0]);
 		foreach ($tmpLanguages as $lang) {
-			$_hreflang[$lang] = rtrim(DOMAIN,'/').'/'.$lang.'/'.ITEM_TYPE.'/'.$itemName
+			$_hreflang[$lang] = rtrim(DOMAIN,'/').'/'.$lang.'/'.ITEM_TYPE.'/'.$itemName;
 		}
 	}
 } else {

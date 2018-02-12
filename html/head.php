@@ -59,14 +59,9 @@
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
 	<!-- Google hreflang tag -->
-	<link rel="alternate" hreflang="en" href="<?php echo DOMAIN ?>" />
-	<?php
-		$tmpLanguages = $acceptedLanguages;
-		unset($tmpLanguages[0]);
-		foreach ($tmpLanguages as $lang) {
-			echo '<link rel="alternate" hreflang="'.$lang.'" href="'.DOMAIN.'/'.$lang.'/"/>'.PHP_EOL;
-		}
-	?>
+	<?php foreach ($_hreflang as $hreflang=>$href): ?>
+	<link rel="alternate" hreflang="<?php echo $hreflang ?>" href="<?php echo $href ?>" />
+	<?php endforeach ?>
 
 	<!-- Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=<?php echo GOOGLE_ANALYTICS ?>"></script>

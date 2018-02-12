@@ -35,6 +35,8 @@ if ($currentLanguage !== "en") {
 $_items = false;
 $_item = false;
 $_whereAmI = 'home';
+$_hreflang = array();
+$_canonicalURL = '';
 
 if (!empty($_GET['item'])) {
 	$itemName = sanitize($_GET['item']);
@@ -43,8 +45,30 @@ if (!empty($_GET['item'])) {
 	if ($_item===false) {
 		header("HTTP/1.0 404 Not Found");
 		exit;
+	} else {
+		// Canonical URL
+		$_canonicalURL = $_item['permalink'];
+
+		// hreflang
+		$_hreflang = array('en'=>rtrim(DOMAIN,'/').'/'.ITEM_TYPE.'/'.$itemName);
+		$tmpLanguages = $acceptedLanguages;
+		unset($tmpLanguages[0]);
+		foreach ($tmpLanguages as $lang) {
+			$_hreflang[$lang] = rtrim(DOMAIN,'/').'/'.$lang.'/'.ITEM_TYPE.'/'.$itemName
+		}
 	}
 } else {
 	$_items = getItems();
 	$_whereAmI = 'home';
+
+	// Canonical URL
+	$_canonicalURL = $_topbar['website'];
+
+	// hreflang
+	$_hreflang = array('en'=>DOMAIN);
+	$tmpLanguages = $acceptedLanguages;
+	unset($tmpLanguages[0]);
+	foreach ($tmpLanguages as $lang) {
+		$_hreflang[$lang] = rtrim(DOMAIN,'/').'/'.$lang.'/';
+	}
 }

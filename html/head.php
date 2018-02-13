@@ -63,6 +63,9 @@
 	<link rel="alternate" hreflang="<?php echo $hreflang ?>" href="<?php echo $href ?>" />
 	<?php endforeach ?>
 
+	<!-- Canonical URL -->
+	<link rel="canonical" href="<?php echo $_canonicalURL ?>">
+
 	<!-- Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=<?php echo GOOGLE_ANALYTICS ?>"></script>
 	<script>

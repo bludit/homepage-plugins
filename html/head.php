@@ -1,4 +1,4 @@
-<?php defined('BLUDIT') or die('Bludit'); ?>
+<?php defined('BLUDIT') or die('BLUDIT'); ?>
 <head>
 
 	<meta charset="UTF-8">

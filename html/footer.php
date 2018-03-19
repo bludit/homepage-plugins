@@ -1,4 +1,4 @@
-<?php defined('BLUDIT') or die('Bludit'); ?>
+<?php defined('BLUDIT') or die('BLUDIT'); ?>
 <footer class="py-4 bg-dark">
 	<div class="container">
 	<div class="row mb-2">

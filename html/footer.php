@@ -11,6 +11,8 @@
 				<a class="text-white" href="https://plugins.bludit.com/de/">Deutsch</a>
 				<span class="text-muted"> | </span>
 				<a class="text-white" href="https://plugins.bludit.com/es/">Español</a>
+				<span class="text-muted"> | </span>
+				<a class="text-white" href="https://plugins.bludit.com/it/">Italiano</a>
 			</div>
 		</div>
 		<div class="row">

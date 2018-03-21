@@ -2,7 +2,7 @@
 
 // Language passed via $_GET['l']
 $currentLanguage = 'en';
-$acceptedLanguages = array('en', 'de', 'es');
+$acceptedLanguages = array('en', 'de', 'es', 'it');
 if (isset($_GET['l'])) {
 	if (in_array($_GET['l'], $acceptedLanguages)) {
 		$currentLanguage = $_GET['l'];

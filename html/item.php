@@ -1,4 +1,4 @@
-<?php defined('BLUDIT') or die('Bludit'); ?>
+<?php defined('BLUDIT') or die('BLUDIT'); ?>
 <div class="container mb-2">
 <div class="row">
 

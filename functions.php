@@ -1,4 +1,4 @@
-<?php defined('BLUDIT') or die('Bludit');
+<?php defined('BLUDIT') or die('BLUDIT');
 
 // Returns the translation of the key
 function l($key, $print=true) {

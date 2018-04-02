@@ -1,4 +1,4 @@
-<?php defined('BLUDIT') or die('Bludit');
+<?php defined('BLUDIT') or die('BLUDIT');
 
 // Language passed via $_GET['l']
 $currentLanguage = 'en';

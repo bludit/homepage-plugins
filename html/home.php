@@ -15,7 +15,7 @@
 
 			<div class="col-lg-6 item">
 			<div class="card h-100">
-				<?-- <a href="<?php echo $item['permalink'] ?>"><img class="card-img-top" src="<?php echo $item['screenshoot_url'] ?>" alt="Screenshoot"></a>
+				<!-- <a href="<?php echo $item['permalink'] ?>"><img class="card-img-top" src="<?php echo $item['screenshoot_url'] ?>" alt="Screenshoot"></a>
 				<div class="card-body"> -->
 					<h4 class="card-title"><a href="<?php echo $item['permalink'] ?>"><?php echo $item['name'] ?></a></h4>
 					<h6 class="card-subtitle mb-3"><?php l('Made by') ?> <?php echo $item['author']['name'] ?></h6>

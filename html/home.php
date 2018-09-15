@@ -3,7 +3,7 @@
 <div class="container">
 
 	<!-- Page Heading -->
-	<h4 class="my-5 text-center"><?php l('little-description-paragraph1') ?></h4>
+	<h1 style="font-size: 1.6em;" class="my-5 text-center"><?php l('little-description-paragraph1') ?></h1>
 
 	<div class="row my-5">
 		<input type="text" class="form-control" id="search" placeholder="<?php l('Search') ?>">
@@ -26,11 +26,11 @@
 						}
 
 						if ($item['price_usd']>0) {
-							echo '<a class="btn btn-secondary" href="'.$item['download_url'].'" role="button" target="_blank"><i class="fa fa-shopping-cart" aria-hidden="true"></i> '.l('Buy',false).' $'.$item['price_usd'].'</a>'.PHP_EOL;
+							echo '<a class="btn btn-secondary btn-sm" href="'.$item['download_url'].'" role="button" target="_blank"><i class="fa fa-shopping-cart" aria-hidden="true"></i> '.l('Buy',false).' $'.$item['price_usd'].'</a>'.PHP_EOL;
 						} elseif ($item['price_usd']==-1) {
-							echo '<a class="btn btn-secondary" href="'.$item['download_url'].'" role="button" target="_blank"><i class="fa fa-shopping-cart" aria-hidden="true"></i> '.l('Buy from',false).' $1</a>'.PHP_EOL;
+							echo '<a class="btn btn-secondary btn-sm" href="'.$item['download_url'].'" role="button" target="_blank"><i class="fa fa-shopping-cart" aria-hidden="true"></i> '.l('Buy from',false).' $1</a>'.PHP_EOL;
 						} else {
-							echo '<a class="btn btn-secondary" href="'.$item['download_url'].'" role="button" target="_blank"><i class="fa fa-download" aria-hidden="true"></i> '.l('Free Download',false).'</a>'.PHP_EOL;
+							echo '<a class="btn btn-secondary btn-sm" href="'.$item['permalink'].'#download" role="button"><i class="fa fa-download" aria-hidden="true"></i> '.l('Download',false).'</a>'.PHP_EOL;
 						}
 					?>
 				</div>

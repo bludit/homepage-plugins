@@ -15,7 +15,7 @@ $languageArray = json_decode($json, true);
 // Top bar links
 if ($currentLanguage !== "en") {
 	$_topbar = array(
-		'documentation'=>'https://docs.bludit.com/'.$currentLanguage.'/',
+		'documentation'=>'https://docs.bludit.com',
 		'themes'=>'https://themes.bludit.com/'.$currentLanguage.'/',
 		'plugins'=>'https://plugins.bludit.com/'.$currentLanguage.'/',
 		'pro'=>'https://pro.bludit.com/'.$currentLanguage.'/',

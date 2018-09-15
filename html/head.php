@@ -38,6 +38,7 @@
 	<meta property="og:type" content="website" />
 	<meta property="og:image:type" content="image/png" />
 	<meta property="og:image:alt" content="Bludit Logo" />
+	<meta property="og:site_name" content="Bludit Plugins"/>
 	<?php
 		if ($_item!==false) {
 			echo '<meta property="og:url" content="'.$_item['permalink'].'" />'.PHP_EOL;
@@ -53,7 +54,7 @@
 	?>
 
 	<!-- CSS files -->
-	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
 	<link href="<?php echo DOMAIN ?>/css/bludit.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">

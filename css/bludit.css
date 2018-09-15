@@ -1,7 +1,7 @@
 body {
 	padding-top: 54px;
 	font-family: 'Open Sans', sans-serif;
-	background: #f1f1f1;
+	background: #F8F8FA;
 }
 
 @media (min-width: 992px) {
@@ -65,10 +65,20 @@ a.author-social:hover {
 .btn {
 	padding: 5px 13px;
 	background: linear-gradient(to bottom,#90a4ae 0,#78909c 100%);
+	border: none;
+	margin-top: 5px;
 }
 
 .btn-primary {
-	background: linear-gradient(to bottom,#42a5f5 0,#2196f3 100%);
+	background: #42a5f5;
+}
+
+.btn-secondary {
+	background: #3cb6de;
+}
+
+.btn-secondary:hover {
+	background: #359fc1;
 }
 
 #search {

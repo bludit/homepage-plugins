@@ -1,5 +1,6 @@
 # Source code of https://plugins.bludit.com
-This repository contains the files of the official page of Bludit Plugins.
+This repository contains the files for the official page of Bludit Plugins.
+You can colaborate and improve this site, create a pull request with the changes.
 
 English:
 - https://plugins.bludit.com
@@ -11,6 +12,5 @@ Español:
 - https://plugins.bludit.com/es/
 
 ## How to add a Plugin
-All plugins and authors are in the bellow repository.
-Add your free or paid plugin.
+Visit the bellow repository where you can add your free or paid plugin.
 - https://github.com/bludit/plugins-repository

@@ -1,0 +1,33 @@
+{
+	"head-title": "Eklentiler - Bludit",
+	"head-description": "Harika eklentilerle Bludit işlevselliğini artırın. Sosyal ağlar, HTML Editörleri, CSS'i Özelleştirme, RSS Beslemesi, Site Haritası, Open Graph, Twitter Kartları ve daha fazlası.",
+	"little-description-paragraph1": "<b>Şaşırtıcı</b> eklentileriyle Bludit işlevselliğini <b>genişlet</b>",
+	"add-new-plugin": "Yeni eklenti ekle",
+
+	"demo": "Demo",
+	"documentation": "Belgeler",
+	"themes": "Temalar",
+	"plugins": "Eklentiler",
+	"donations": "Bağış",
+	"donate": "Bağış",
+	"download": "İndir",
+	"search": "Ara",
+	"live-demo": "Canlı demo",
+	"free-download": "Ücretsiz indir",
+	"more-information": "Daha fazla bilgi",
+	"made-by": "Geliştirici:",
+	"support-forum": "Destek forumu",
+	"support-chat": "Destek sohbeti",
+	"description": "Açıklama",
+	"features": "Özellikler",
+	"last-update": "Son güncelleme",
+	"author": "Editör",
+	"buy": "Satın al",
+	"buy-from": "Satın al",
+	"version": "Sürüm",
+
+	"download-for-bludit-v2": "Bludit v2.x için indir",
+	"download-for-bludit-v3": "Bludit v3.x için indir",
+	"support": "Destek",
+	"for-more-information-or-extra": "Daha fazla bilgi veya ek yapılandırmalar için geliştiricinin sitesini ziyaret edin."
+}

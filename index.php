@@ -3,7 +3,7 @@
 	include('config.php');
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="<?php echo $currentLanguage ?>">
 <?php include(PATH_HTML.'head.php'); ?>
 <body>
 	<!-- Top Bar -->

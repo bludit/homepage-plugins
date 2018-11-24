@@ -10,6 +10,12 @@ foreach ($files as $file) {
 	array_push($acceptedLanguages, basename($file, ".json"));
 }
 
+if (isset($_GET['l'])) {
+	if (in_array($_GET['l'], $acceptedLanguages)) {
+		$currentLanguage = $_GET['l'];
+	}
+}
+
 $json = file_get_contents(PATH_ROOT.'languages'.DS.$currentLanguage.'.json');
 $languageArray = json_decode($json, true);
 

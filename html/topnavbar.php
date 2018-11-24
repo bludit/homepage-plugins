@@ -27,10 +27,9 @@
 					<a class="nav-link dropdown-toggle" href="https://plugins.bludit.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-globe"></i></a>
 					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
 						<a class="dropdown-item" href="https://plugins.bludit.com">English</a>
-						<a class="dropdown-item" href="https://plugins.bludit.com/ru/">Русский</a>
 						<a class="dropdown-item" href="https://plugins.bludit.com/de/">Deutsch</a>
 						<a class="dropdown-item" href="https://plugins.bludit.com/es/">Español</a>
-						<a class="dropdown-item" href="https://plugins.bludit.com/it/">Italiano</a>
+						<a class="dropdown-item" href="https://plugins.bludit.com/ru/">Русский</a>
 					</div>
 				</li>
 			</ul>

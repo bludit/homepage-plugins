@@ -2,7 +2,7 @@
 	"head-title": "Plugins - Bludit",
 	"head-description": "Erweitere die Funktionalität von Bludit mit einmaligen Plugins. HTML-Editoren, CSS-Anpassung, RSS-Feed, Sitemap, Open Graph, Twitter Cards und mehr.",
 	"little-description-paragraph1": "<b>Erweitere</b> die Funktionalität von Bludit mit <b>einmaligen</b> Plugins",
-	"add-new-plugin": "Add New Plugin",
+	"add-new-plugin": "Neues Plugin Hinzufügen",
 
 	"demo": "Demo",
 	"documentation": "Dokumentation",
@@ -23,11 +23,11 @@
 	"last-update": "Letzte Aktualisierung",
 	"author": "Autor",
 	"buy": "Kaufen",
-	"buy-from": "Buy from",
+	"buy-from": "Kaufen von",
 	"version": "Version",
 
-	"download-for-bludit-v2": "Download for Bludit v2.x",
-	"download-for-bludit-v3": "Download for Bludit v3.x",
+	"download-for-bludit-v2": "Download für Bludit v2.x",
+	"download-for-bludit-v3": "Download für Bludit v3.x",
 	"support": "Support",
-	"for-more-information-or-extra": "For more information or extra configurations, visit the developer's site."
+	"for-more-information-or-extra": "Weitere Informationen oder zusätzliche Konfigurationen finden Sie auf der Website des Entwicklers."
 }

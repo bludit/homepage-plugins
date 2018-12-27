@@ -3,12 +3,8 @@
 // Language passed via $_GET['l']
 $currentLanguage = 'en';
 
-// read the files from language directory
-$acceptedLanguages = array();
-$files = glob('languages/*.json');
-foreach ($files as $file) {
-	array_push($acceptedLanguages, basename($file, ".json"));
-}
+//
+$acceptedLanguages = array('en','es','de','ru');
 
 if (isset($_GET['l'])) {
 	if (in_array($_GET['l'], $acceptedLanguages)) {

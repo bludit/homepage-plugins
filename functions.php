@@ -18,6 +18,7 @@ function buildItem($data, $key) {
 	global $currentLanguage;
 	global $_topbar;
 
+	$data['translated'] = true;
 	$data['key'] = $key;
 	$data['screenshoot_url'] = CDN.'items/'.$data['key'].'/screenshot.png';
 	$data['screenshoot_twitter_url'] = CDN.'items/'.$data['key'].'/screenshot.png';
@@ -25,7 +26,10 @@ function buildItem($data, $key) {
 	$data['permalink'] = rtrim($_topbar['website'],'/').'/'.ITEM_TYPE.'/'.$key;
 	if (!empty($data['description_'.$currentLanguage])) {
 		$data['description'] = $data['description_'.$currentLanguage];
+	} else {
+		$data['translated'] = false;
 	}
+
 	if (!empty($data['features_'.$currentLanguage])) {
 		$data['features'] = $data['features_'.$currentLanguage];
 	}

@@ -27,7 +27,9 @@ function buildItem($data, $key) {
 	if (!empty($data['description_'.$currentLanguage])) {
 		$data['description'] = $data['description_'.$currentLanguage];
 	} else {
-		$data['translated'] = false;
+		if ($currentLanguage!='en') {
+			$data['translated'] = false;
+		}
 	}
 
 	if (!empty($data['features_'.$currentLanguage])) {

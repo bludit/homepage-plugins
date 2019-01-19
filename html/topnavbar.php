@@ -2,7 +2,7 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
 	<div class="container">
 		<a class="navbar-brand" href="<?php echo $_topbar['website'] ?>">
-			<img src="<?php echo DOMAIN ?>/img/bludit-logo.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+			<img src="<?php echo DOMAIN ?>/img/bludit-logo.svg" width="30" height="30" class="d-inline-block align-top" alt="Bludit logo">
 			<span class="text-white">BLUDIT</span>
 			<span class="ml-1 text-muted"><?php l('Plugins') ?></span>
 		</a>

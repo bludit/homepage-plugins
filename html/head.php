@@ -7,8 +7,8 @@
 
 	<?php
 		if ($_item!==false) {
-			echo '<title>'.$_item['name'].' - '.l('head title', false).'</title>'.PHP_EOL;
-			echo '<meta name="description" content="'.$_item['description'].'">'.PHP_EOL;
+			echo '<title>'.htmlentities($_item['name'], ENT_QUOTES).' - '.l('head title', false).'</title>'.PHP_EOL;
+			echo '<meta name="description" content="'.htmlentities($_item['description'], ENT_QUOTES).'">'.PHP_EOL;
 		} else {
 			echo '<title>'.l('head title', false).'</title>'.PHP_EOL;
 			echo '<meta name="description" content="'.l('head description', false).'">'.PHP_EOL;
@@ -23,8 +23,8 @@
 	<meta name="twitter:site" content="@bludit" />
 	<?php
 		if ($_item!==false) {
-			echo '<meta name="twitter:title" content="'.$_item['name'].' - '.l('head title', false).'" />'.PHP_EOL;
-			echo '<meta name="twitter:description" content="'.$_item['description'].'" />'.PHP_EOL;
+			echo '<meta name="twitter:title" content="'.htmlentities($_item['name'], ENT_QUOTES).' - '.l('head title', false).'" />'.PHP_EOL;
+			echo '<meta name="twitter:description" content="'.htmlentities($_item['description'], ENT_QUOTES).'" />'.PHP_EOL;
 			echo '<meta name="twitter:image" content="'.$_item['screenshoot_twitter_url'].'" />'.PHP_EOL;
 		} else {
 			echo '<meta name="twitter:title" content="'.l('head title', false).'" />'.PHP_EOL;
@@ -42,8 +42,8 @@
 	<?php
 		if ($_item!==false) {
 			echo '<meta property="og:url" content="'.$_item['permalink'].'" />'.PHP_EOL;
-			echo '<meta property="og:title" content="'.$_item['name'].' - '.l('head title', false).'" />'.PHP_EOL;
-			echo '<meta property="og:description" content="'.$_item['description'].'" />'.PHP_EOL;
+			echo '<meta property="og:title" content="'.htmlentities($_item['name'], ENT_QUOTES).' - '.l('head title', false).'" />'.PHP_EOL;
+			echo '<meta property="og:description" content="'.htmlentities($_item['description'], ENT_QUOTES).'" />'.PHP_EOL;
 			echo '<meta property="og:image" content="'.$_item['screenshoot_facebook_url'].'" />'.PHP_EOL;
 		} else {
 			echo '<meta property="og:url" content="'.$_topbar['website'].'" />'.PHP_EOL;
@@ -54,7 +54,7 @@
 	?>
 
 	<!-- CSS files -->
-	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet">
 	<link href="<?php echo DOMAIN ?>/css/bludit.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">

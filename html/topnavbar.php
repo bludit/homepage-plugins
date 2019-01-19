@@ -24,7 +24,7 @@
 					<a class="nav-link" href="<?php echo $_topbar['pro'] ?>">Bludit PRO</a>
 				</li>
 				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="https://plugins.bludit.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-globe"></i></a>
+					<a class="nav-link dropdown-toggle" href="#" data-target="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-globe"></i></a>
 					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
 						<a class="dropdown-item" href="https://plugins.bludit.com">English</a>
 						<a class="dropdown-item" href="https://plugins.bludit.com/de/">Deutsch</a>

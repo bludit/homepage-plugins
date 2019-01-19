@@ -7,6 +7,6 @@ You can colaborate and improve this site, create a pull request with the changes
 - (Español) https://plugins.bludit.com/es/
 - (Русский) https://plugins.bludit.com/ru/
 
-## How to add a theme
-Visit the bellow repository where you can add your free or paid theme.
+## How to add a plugin
+Visit the bellow repository where you can add your free or paid plugin.
 - https://github.com/bludit/plugins-repository

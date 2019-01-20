@@ -1,2 +1,3 @@
+Sitemap: https://plugins.bludit.com/sitemap.xml
 User-agent: * 
 Disallow: 

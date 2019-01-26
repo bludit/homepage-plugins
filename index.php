@@ -59,7 +59,6 @@
 		id:51979046,
 		clickmap:true,
 		trackLinks:true,
-		webvisor:true,
 		accurateTrackBounce:true
 	   });
 	</script>

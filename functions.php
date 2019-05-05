@@ -25,7 +25,6 @@ function buildItem($data, $key) {
 
 	$data['translated'] = true;
 	$data['key'] = $key;
-	$data['screenshoot_url'] = CDN.'items/'.$data['key'].'/screenshot.png';
 	$data['screenshoot_twitter_url'] = CDN.'items/'.$data['key'].'/screenshot.png';
 	$data['screenshoot_facebook_url'] = CDN.'items/'.$data['key'].'/screenshot.png';
 	$data['permalink'] = rtrim($_topbar['website'],'/').'/'.ITEM_TYPE.'/'.$key;
@@ -42,6 +41,13 @@ function buildItem($data, $key) {
 	}
 
 	$data['author'] = getAuthor($data['author_username']);
+
+	// Check Screenshot
+	$data['screenshoot_url'] = CDN.'items/'.$data['key'].'/screenshot.png';
+	$validate = @getimagesize($data['screenshoot_url']);
+	if(!$validate){
+		$data['screenshoot_url'] = false;
+	}
 
 	return $data;
 }

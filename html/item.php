@@ -2,20 +2,20 @@
 
 <div class="container mb-2">
 	<div class="row">
-		<div class="col-8 pt-5 pb-5">
+		<div id="plugin-content" class="col-lg-8 col-sm-12 pt-5 pb-lg-5">
 			<div class="card shadow-sm">
 				<?php if(!$_item['translated']){ ?>
 					<div class="card-img-top p-3 bg-danger" style="height:auto;margin-bottom:-5px;">
 						<a href="https://github.com/bludit/plugins-repository/tree/master/items/<?php echo $_item['key'] ?>" target="_blank" class="text-white">
-							<?php echo l("this-plugin-has-not-yet-been-translated-into") ?>
+							<?php l("this-plugin-has-not-yet-been-translated-into") ?>
 						</a>
 					</div>
 				<?php } ?>
 
-				<?php if(!empty($_item['screenshoot_url']) && file_exists($_item['screenshoot_url'])){ ?>
-					<img src="<?php echo $_item['screenshoot_url']; ?>" class="card-img-top" alt="Header Image" />
+				<?php if(!empty($_item['screenshoot_url'])){ ?>
+					<img src="<?php echo $_item['screenshoot_url']; ?>" class="card-img-top" alt="<?php l("Header Image"); ?>" />
 				<?php } else { ?>
-					<div class="card-img-top"><span>Header Image</span></div>
+					<div class="card-img-top"><span><?php l("Header Image"); ?></span></div>
 				<?php } ?>
 
 				<div class="card-body">
@@ -35,32 +35,32 @@
 				?>
 			</div>
 
-			<div class="row mt-4 mb-5">
-				<div class="col-4">
-					<?php if(!empty($_item['demo_url'])){ ?>
+			<div id="plugin-links" class="row mt-4 mb-5">
+				<div class="col-md-4 col-sm-12">
+					<?php if(empty($_item['demo_url'])){ ?>
 						<a href="<?php echo $_item['demo_url']; ?>" class="btn btn-dark" target="_blank">
-							<i class="fa fa-external-link" aria-hidden="true"></i> Live Demo
+							<i class="fa fa-external-link" aria-hidden="true"></i> <?php l("Live Demo"); ?>
 						</a>
 					<?php } ?>
 				</div>
-				<div class="col-8 text-right">
+				<div class="col-md-8 col-sm-12 text-right">
 					<?php if($_item['price_usd'] > 0){ ?>
 						<a href="<?php echo $_item['download_url']; ?>" class="btn btn-primary" target="_blank">
-							<i class="fa fa-shopping-cart" aria-hidden="true"></i> Buy $<?php echo $_item['price_usd']; ?>
+							<i class="fa fa-shopping-cart" aria-hidden="true"></i> <?php l("Buy"); ?> $<?php echo $_item['price_usd']; ?>
 						</a>
 					<?php } else if($_item['price_usd'] == -1){ ?>
 						<a href="<?php echo $_item['download_url']; ?>" class="btn btn-primary" target="_blank">
-							<i class="fa fa-shopping-cart" aria-hidden="true"></i> Buy from $1
+							<i class="fa fa-shopping-cart" aria-hidden="true"></i> <?php l("Buy from"); ?> $1
 						</a>
 					<?php } else { ?>
-						<?php if(!empty($_item['download_url_v2'])){ ?>
+						<?php if(empty($_item['download_url_v2'])){ ?>
 							<a href="<?php echo $_item['download_url_v2']; ?>" class="btn btn-secondary btn-sm" target="_blank">
-								<i class="fa fa-download" aria-hidden="true"></i> Download for Bludit v.2.x
+								<i class="fa fa-download" aria-hidden="true"></i> <?php l("Download for Bludit v.2.x"); ?>
 							</a>
 						<?php } ?>
 						<?php if(!empty($_item['download_url'])){ ?>
 							<a href="<?php echo $_item['download_url']; ?>" class="btn btn-primary" target="_blank">
-								<i class="fa fa-download" aria-hidden="true"></i> Download for Bludit v.3.x
+								<i class="fa fa-download" aria-hidden="true"></i> <?php l("Download for Bludit v.3.x"); ?>
 							</a>
 						<?php } ?>
 					<?php } ?>
@@ -69,7 +69,7 @@
 
 			<div class="card shadow-sm mt-5 mb-5">
 				<div class="card-body">
-					<h5 class="card-title">Author: <b><?php echo $_item['author']['name'] ?></b></h5>
+					<h5 class="card-title"><?php l("Author"); ?>: <b><?php echo $_item['author']['name'] ?></b></h5>
 					<h6 class="card-subtitle mb-3 text-muted">Developer of 5 Plugins and 5 Themes</h6>
 					<?php
 						if(!empty($_item['author']['website'])){
@@ -107,19 +107,19 @@
 			</div>
 		</div>
 
-		<div class="col-4 pt-5 pb-5 pl-5">
+		<div id="plugin-sidebar" class="col-lg-4 col-sm-12 pt-lg-5 pb-5 pl-lg-5">
 			<div class="card mb-4">
 				<ul class="list-group list-group-flush">
 					<li class="list-group-item">
-						<small class="w-50 d-inline-block font-weight-bold">Version</small>
+						<small class="w-50 d-inline-block font-weight-bold"><?php l("Version"); ?></small>
 						<small><?php echo $_item["version"]; ?></small>
 					</li>
 					<li class="list-group-item">
-						<small class="w-50 d-inline-block font-weight-bold">Last Update</small>
-						<small><?php echo timeago(strtotime($_item["release_date"] . " 00:00:00")); ?> ago</small>
+						<small class="w-50 d-inline-block font-weight-bold"><?php l("Last Update"); ?></small>
+						<small><?php echo timeago(strtotime($_item["release_date"] . " 00:00:00")); ?> <?php l("ago"); ?></small>
 					</li>
 					<li class="list-group-item">
-						<small class="w-50 d-inline-block font-weight-bold">Compatibility</small>
+						<small class="w-50 d-inline-block font-weight-bold"><?php l("Compatibility"); ?></small>
 						<small>Bludit 3.5.0+</small>
 					</li>
 				</ul>

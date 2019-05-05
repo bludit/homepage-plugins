@@ -10,6 +10,7 @@ body {
 	}
 }
 
+
 a {
 	color: #333;
 }
@@ -33,6 +34,27 @@ a {
 .card-description {
 	height: 100px;
 
+}
+
+.card-img-top{
+	width: 100%;
+	height: 300px;
+	background-color: #242A30;
+}
+.card-img-top img{
+	width: 100%;
+	height: auto;
+}
+.card-img-top span{
+	color: rgba(255, 255, 255, 0.1);
+	width: 100%;
+	display: block;
+	font-size: 36px;
+	text-align: center;
+	font-weight: 900;
+	text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.1);
+	line-height: 300px;
+	text-transform: uppercase;
 }
 
 .nav-link {
@@ -73,6 +95,7 @@ a.author-social:hover {
 	background: #42a5f5;
 }
 
+
 .btn-secondary {
 	background: #3cb6de;
 }
@@ -86,19 +109,11 @@ a.author-social:hover {
 	margin: 0 auto;
 }
 
-.card-img-top{
-	width: 100%;
-	height: 300px;
-	background-color: #242A30;
-}
-.card-img-top span{
-	color: rgba(255, 255, 255, 0.1);
-	width: 100%;
-	display: block;
-	font-size: 36px;
-	text-align: center;
-	font-weight: 900;
-	text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.1);
-	line-height: 300px;
-	text-transform: uppercase;
+@media (max-width: 960px) {
+	#plugin-links > div{
+		text-align: center !important;
+	}
+	#plugin-links > div a{
+		margin: 10px 0;
+	}
 }

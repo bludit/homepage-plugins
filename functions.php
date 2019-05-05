@@ -11,6 +11,11 @@ function l($key, $print=true) {
 		} else {
 			return $languageArray[$key];
 		}
+	} else {
+		if(!$print){
+			return func_get_arg(0);
+		}
+		print(func_get_arg(0));
 	}
 }
 
@@ -114,6 +119,29 @@ function sortByDate($a, $b) {
 }
 
 function sanitize($string) {
+	if(strpos($string, "plugin/") === 0){
+		$string = substr($string, 7);
+	}
 	$string = str_replace(' ', '-', $string);
 	return preg_replace('/[^A-Za-z0-9\-]/', '', $string);
+}
+
+function timeago($time){
+	$time = time() - $time;
+
+	$tokens = array (
+		31536000 => 'year',
+		2592000 => 'month',
+		604800 => 'week',
+		86400 => 'day',
+		3600 => 'hour',
+		60 => 'minute',
+		1 => 'second'
+	);
+
+	foreach ($tokens as $unit => $text) {
+		if ($time < $unit) continue;
+		$numberOfUnits = floor($time / $unit);
+		return $numberOfUnits.' '.$text.(($numberOfUnits>1)?'s':'');
+	}
 }

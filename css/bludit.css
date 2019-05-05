@@ -62,7 +62,7 @@ a.author-social:hover {
 	color: #555;
 }
 
-.btn {
+.btn-special {
 	padding: 5px 13px;
 	background: linear-gradient(to bottom,#90a4ae 0,#78909c 100%);
 	border: none;
@@ -84,4 +84,21 @@ a.author-social:hover {
 #search {
 	width: 60%;
 	margin: 0 auto;
+}
+
+.card-img-top{
+	width: 100%;
+	height: 300px;
+	background-color: #242A30;
+}
+.card-img-top span{
+	color: rgba(255, 255, 255, 0.1);
+	width: 100%;
+	display: block;
+	font-size: 36px;
+	text-align: center;
+	font-weight: 900;
+	text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.1);
+	line-height: 300px;
+	text-transform: uppercase;
 }

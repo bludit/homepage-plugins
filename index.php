@@ -1,4 +1,8 @@
 <?php
+error_reporting(E_ALL);
+ini_set('display_errors', TRUE);
+ini_set('display_startup_errors', TRUE);
+
 	define('BLUDIT', true);
 	include('config.php');
 ?>
@@ -24,8 +28,8 @@
 	<?php include(PATH_HTML.'footer.php'); ?>
 
 	<!-- Javascript stuff -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js"></script>
+	<script src="<?php echo DOMAIN ?>/js/jquery-3.4.1.min.js"></script>
+	<script src="<?php echo DOMAIN ?>/js/bootstrap.bundle-4.3.1.min.js"></script>
 
 	<script>
 	$(document).ready(function() {
@@ -38,10 +42,6 @@
 					$(this).parent().parent().parent().show();
 				}
 			});
-		});
-
-		$(".item-screenshot").on("error", function(){
-			$(this).attr("src", "<?php echo SCREENSHOT_DEFAULT ?>");
 		});
 	});
 	</script>
@@ -63,7 +63,6 @@
 	   });
 	</script>
 	<noscript><div><img src="https://mc.yandex.ru/watch/51979046" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-	<!-- /Yandex.Metrika counter -->
 
 </body>
 </html>

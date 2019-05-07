@@ -44,11 +44,6 @@ function buildItem($data, $key) {
 
 	// Check Screenshot
 	$data['screenshoot_url'] = CDN.'items/'.$data['key'].'/screenshot.png';
-	$validate = @getimagesize($data['screenshoot_url']);
-	if(!$validate){
-		$data['screenshoot_url'] = false;
-	}
-
 	return $data;
 }
 

@@ -92,9 +92,9 @@ a.author-social:hover {
 }
 
 .btn-primary {
-	background: #42a5f5;
+	background-color: #0078D4;
+	border-color: #0078D4;
 }
-
 
 .btn-secondary {
 	background: #3cb6de;

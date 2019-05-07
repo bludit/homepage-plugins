@@ -43,7 +43,7 @@
 
 			<div id="plugin-links" class="row mt-4">
 				<div class="col-md-4 col-sm-12">
-					<?php if(empty($_item['demo_url'])){ ?>
+					<?php if(!empty($_item['demo_url'])){ ?>
 						<a href="<?php echo $_item['demo_url']; ?>" class="btn btn-dark" target="_blank">
 							<i class="fa fa-external-link" aria-hidden="true"></i> <?php l("Live Demo"); ?>
 						</a>

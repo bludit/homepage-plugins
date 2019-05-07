@@ -55,10 +55,10 @@
 	?>
 
 	<!-- CSS files -->
-	<link href="<?php echo DOMAIN ?>/css/bootstrap-4.3.1.min.css" rel="stylesheet">
-	<link href="<?php echo DOMAIN ?>/css/bludit.css" rel="stylesheet">
+	<link href="<?php echo DOMAIN ?>/css/bootstrap-4.3.1.min.css?version=<?php echo VERSION ?>" rel="stylesheet">
+	<link href="<?php echo DOMAIN ?>/css/bludit.css?version=<?php echo VERSION ?>" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
-	<link href="<?php echo DOMAIN ?>/css/line-awesome/css/line-awesome-font-awesome.min.css" rel="stylesheet">
+	<link href="<?php echo DOMAIN ?>/css/line-awesome/css/line-awesome-font-awesome.min.css?version=<?php echo VERSION ?>" rel="stylesheet">
 
 	<!-- Google hreflang tag -->
 	<?php foreach ($_hreflang as $hreflang=>$href): ?>

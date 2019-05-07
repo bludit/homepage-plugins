@@ -28,8 +28,8 @@ ini_set('display_startup_errors', TRUE);
 	<?php include(PATH_HTML.'footer.php'); ?>
 
 	<!-- Javascript stuff -->
-	<script src="<?php echo DOMAIN ?>/js/jquery-3.4.1.min.js"></script>
-	<script src="<?php echo DOMAIN ?>/js/bootstrap.bundle-4.3.1.min.js"></script>
+	<script src="<?php echo DOMAIN ?>/js/jquery-3.4.1.min.js?version=<?php echo VERSION ?>"></script>
+	<script src="<?php echo DOMAIN ?>/js/bootstrap.bundle-4.3.1.min.js?version=<?php echo VERSION ?>"></script>
 
 	<script>
 	$(document).ready(function() {

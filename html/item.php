@@ -12,14 +12,12 @@
 					</div>
 				<?php } ?>
 
-				<div id="screenshot">
-				<div class="card-img-top"><span><?php echo $_item['name'] ?></span></div>
-				</div>
+				<div class="card-img-top"><span id="screenshot"><?php echo $_item['name'] ?></span></div>
 
 				<script>
-				document.addEventListener('DOMContentLoaded', function() {
+				document.addEventListener("DOMContentLoaded", function() {
 					$.get("<?php echo $_item['screenshoot_url'] ?>").done(function() {
-						$("#screenshot").html('<img src="<?php echo $_item['screenshoot_url'] ?>" class="card-img-top" alt="<?php echo $_item['name'] ?>">');
+						$("#screenshot").attr('background-size', 'contain').attr('background','url(<?php echo $_item['screenshoot_url'] ?>)');
 					});
 				});
 				</script>

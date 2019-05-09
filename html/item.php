@@ -17,7 +17,7 @@
 				<script>
 				document.addEventListener("DOMContentLoaded", function() {
 					$.get("<?php echo $_item['screenshoot_url'] ?>").done(function() {
-						$("#screenshot").attr('background-size', 'contain').attr('background','url(<?php echo $_item['screenshoot_url'] ?>)');
+						$("#screenshot").attr('style', 'background-size: contain; background: url("<?php echo $_item['screenshoot_url'] ?>")');
 					});
 				});
 				</script>

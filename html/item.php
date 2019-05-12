@@ -12,7 +12,7 @@
 					</div>
 				<?php } ?>
 
-				<div class="card-img-top"><span id="screenshot"><?php echo $_item['name'] ?></span></div>
+				<div id="screenshot" class="card-img-top"><span><?php echo $_item['name'] ?></span></div>
 
 				<script>
 				document.addEventListener("DOMContentLoaded", function() {

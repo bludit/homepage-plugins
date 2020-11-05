@@ -30,6 +30,7 @@
 						<a class="dropdown-item" href="https://plugins.bludit.com/de/">Deutsch</a>
 						<a class="dropdown-item" href="https://plugins.bludit.com/es/">Español</a>
 						<a class="dropdown-item" href="https://plugins.bludit.com/ru/">Русский</a>
+						<a class="dropdown-item" href="https://plugins.bludit.com/pt/">Português</a>
 					</div>
 				</li>
 			</ul>

@@ -68,7 +68,7 @@
 							</a>
 						<?php } ?>
 						<?php if(!empty($_item['download_url_v4'])){ ?>
-							<a href="<?php echo $_item['download_url']; ?>" class="btn btn-primary" target="_blank" role="button">
+							<a href="<?php echo $_item['download_url_v4']; ?>" class="btn btn-primary" target="_blank" role="button">
 								<i class="fa fa-download" aria-hidden="true"></i> <?php l("download-for-bludit-v4"); ?>
 							</a>
 						<?php } ?>

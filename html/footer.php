@@ -13,6 +13,8 @@
 				<a class="text-white" href="https://plugins.bludit.com/es/">Español</a>
 				<span class="text-muted"> | </span>
 				<a class="text-white" href="https://plugins.bludit.com/ru/">Русский</a>
+				<span class="text-muted"> | </span>
+				<a class="text-white" href="https://plugins.bludit.com/pt/">Português</a>				
 			</div>
 		</div>
 		<div class="row">

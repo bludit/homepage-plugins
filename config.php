@@ -12,9 +12,9 @@ define('VERSION', '1.0');
 // define('CDN', 'http://localhost:7000/metadata/items/');
 
 define('DOMAIN', 'https://plugins.bludit.com');
-define('CDN', 'https://rawgit.com/bludit/plugins-repository/master/');
+define('CDN', 'https://raw.githubusercontent.com/bludit/plugins-repository/master/');
 
-define('SCREENSHOT_DEFAULT', 'https://rawgit.com/bludit/plugins-repository/master/templates/screenshot.png');
+define('SCREENSHOT_DEFAULT', 'https://raw.githubusercontent.com/bludit/plugins-repository/master/templates/screenshot.png');
 
 define('ITEM_TYPE', 'plugin');
 #define('ITEM_TYPE', 'theme');
